@@ -1,4 +1,4 @@
-import style from "common/style/table.module.css";
+import style from "../common/style/table.module.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 

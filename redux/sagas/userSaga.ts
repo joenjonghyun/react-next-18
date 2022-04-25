@@ -21,6 +21,7 @@ interface UserLogoutType{
         userid:string
     }
 }
+
 interface UserJoinSuccessType{
     type: string;
     payload: {
@@ -34,6 +35,7 @@ interface UserLoginSuccessType{
         name:string, phone:string, birth:string, address:string
     }
 }
+
 
 function* join(user: UserJoinType){
     try{
@@ -62,6 +64,7 @@ function* logout(){
          
     }
 }
+
 export function* watchJoin(){
     yield takeLatest(userActions.joinRequest, join)
 }

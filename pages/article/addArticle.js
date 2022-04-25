@@ -1,4 +1,4 @@
-import style from "article/style/board-form.module.css";
+import style from "./style/board-form.module.css";
 import React,{ useState } from "react";
 import { useDispatch } from "react-redux";
 import { articleActions } from "../../redux/reducers/articleReducer.ts";
