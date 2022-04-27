@@ -13,4 +13,3 @@ export default function Logout(){
         <button type="submit">로그아웃</button>
     </form>
 }    
-   
