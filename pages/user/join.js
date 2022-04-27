@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { useDispatch } from 'react-redux';
-import { userActions } from '../../redux/reducers/userReducer.ts';
-import tableStyles from 'common/style/table.module.css'
+import { addUser } from '@/store/actions/user';
+import tableStyles from '@/styles/Table.module.css'
 export default function  Join(){
     const [user, setUser] =useState({
         userid:'', password:'', email:'', name:'', phone:'', birth:'', address:''
@@ -19,7 +19,7 @@ export default function  Join(){
         e => {
             e.preventDefault()
             alert(' 진행 1: 회원가입 클릭 ');
-            dispatch(userActions.joinRequest(user))
+            dispatch(addUser(user))
             setUser({
                 userid:'', password:'', email:'', name:'', phone:'', birth:'', address:''
             })
